@@ -4,3 +4,26 @@ body {
   margin: 0;
   padding: 20px;
 }
+h1,
+.clock-container,
+.city-select {
+  background-color: #f4ffda;
+  border: 2px solid #ff8800;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 0 10px 10px rgba(135, 54, 0, 0.636);
+
+  margin-bottom: 20px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: vertical;
+  flex-direction: column;
+  height: 100vh;
+}
