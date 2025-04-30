@@ -1,40 +1,93 @@
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  font-family: "Cinzel", serif;
   margin: 0;
   padding: 20px;
+  background: radial-gradient(#aaa, #666);
 }
+
 h1,
 .clock-container,
 .city-select {
-  background-color: #f4ffda;
-  border: 2px solid #ff8800;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-left: 10%;
   margin-right: 10%;
-  box-shadow: 0 10px 10px rgba(135, 54, 0, 0.636);
-
   margin-bottom: 20px;
+  box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.4),
+    inset -8px -8px 15px rgba(255, 255, 255, 0.2);
 }
+
 h1 {
   text-align: center;
   color: #333;
 }
+
+h1,
+.city-select {
+  background: linear-gradient(145deg, #b89b72, #e0c9a6);
+  color: #2c2c2c;
+  border: 1px solid #6f5846;
+}
+
 .clock-container {
-  overflow: auto;
+  background: linear-gradient(145deg, #d2d2d2, #f0f0f0);
+  border: 1px solid #aaa;
+  position: relative;
   max-width: 90%;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: vertical;
+  overflow-y: auto;
   flex-direction: column;
-  height: 100vh;
+  max-height: 400px;
 }
 .clock {
-  word-wrap: break-word; /* ensures long text wraps */
-  overflow-wrap: break-word;
-  white-space: normal; /* prevent text from staying on one line */
-  max-width: 89%;
+  max-width: 100%;
+  max-height: 80px;
   box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  border-bottom: #b89b72 1px solid;
+  position: relative;
+  padding-right: 20px;
+  padding-top: 0px;
+}
+select {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.date-time {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-align: right;
+  z-index: 1;
+}
+.clock-container::-webkit-scrollbar {
+  width: 10px;
+}
+.clock-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.clock-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.clock-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 12px;
+}
+.clock-container::-webkit-scrollbar-track:hover {
+  background: #e0e0e0;
 }
