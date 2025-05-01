@@ -12,57 +12,35 @@
   </head>
   <body>
     <h1>World Clock</h1>
-    <select id="city-select" class="city-select">
-      <option value="Select a city">Select a city</option>
-      <option value="New York">New York</option>
-      <option value="Los Angeles">Los Angeles</option>
-      <option value="Chicago">Chicago</option>
-      <option value="Houston">Houston</option>
-      <option value="Phoenix">Phoenix</option>
-      <option value="Philadelphia">Philadelphia</option>
-      <button type="submit">Get Time</button>
-    </select>
 
-    <section class="clock-container">
+    <select id="city-select" class="city-select">
+      <option value="">Select a location</option>
+      <option value="America/New_York">New York</option>
+      <option value="America/Los_Angeles">Los Angeles</option>
+      <option value="America/Chicago">Chicago</option>
+      <option value="Europe/Paris">Paris</option>
+      <option value="Asia/Tokyo">Tokyo</option>
+      <option value="Asia/Magadan">Magadan</option>
+      <option value="Australia/Sydney">Sydney</option>
+      <option value="America/Denver">Denver</option>
+      <option value="America/Detroit">Detroit</option>
+      <option value="US/Hawaii">Honolulu</option>
+    </select>
+    <span class="ux">Currently selected clock will be displayed here.</span>
+
+    <section class="clock-container-top" id="clock-container-top">
       <div class="clock" id="clock1">
-        <h2>New York</h2>
+        <h2 class="city" id="city1">New York</h2>
         <p class="date-time">
           <span class="date" id="date1">Wednesday, April 30, 2025</span>
           <span class="time" id="time1">10:28 AM</span>
         </p>
-        <br />
       </div>
-      <div class="clock" id="clock2">
-        <h2>New York</h2>
-        <p class="date-time">
-          <span class="date" id="date2">Wednesday, April 30, 2025</span>
-          <span class="time" id="time2">10:28 AM</span>
-        </p>
-        <br />
-      </div>
-      <div class="clock" id="clock3">
-        <h2>New York</h2>
-        <p class="date-time">
-          <span class="date" id="date3">Wednesday, April 30, 2025</span>
-          <span class="time" id="time3">10:28 AM</span>
-        </p>
-        <br />
-      </div>
-      <div class="clock" id="clock4">
-        <h2>New York</h2>
-        <p class="date-time">
-          <span class="date" id="date4">Wednesday, April 30, 2025</span>
-          <span class="time" id="time4">10:28 AM</span>
-        </p>
-        <br />
-      </div>
-      <div class="clock" id="clock5">
-        <h2>New York</h2>
-        <p class="date-time">
-          <span class="date" id="date5">Wednesday, April 30, 2025</span>
-          <span class="time" id="time5">10:28 AM</span>
-        </p>
-        <br />
+    </section>
+    <span class="ux">Previously viewed clocks will be displayed here.</span>
+    <section class="clock-container" id="clock-container">
+      <div id="clocks-container">
+        <!-- new clocks go here -->
       </div>
     </section>
     <footer>
@@ -72,6 +50,9 @@
       <a href="https://github.com/pharmermichelle/world-clock">Github</a>, and
       hosted on <a href="https://clockwork-earth.netlify.app/">Netlify </a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <script src="src\script.js"></script>
   </body>
 </html>
