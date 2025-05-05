@@ -130,3 +130,48 @@ footer {
 .clock-container::-webkit-scrollbar-track:hover {
   background: #e0e0e0;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1,
+  .clock-container,
+  .clock-container-top,
+  .city-select {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .clock-container,
+  .clock-container-top {
+    padding: 1rem;
+    max-height: 300px; /* a little more room on mobile */
+  }
+
+  span.ux {
+    font-size: 0.9rem;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .city-select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .clock h2 {
+    font-size: 1rem;
+  }
+
+  .clock p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}

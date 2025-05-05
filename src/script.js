@@ -26,7 +26,7 @@ function createClockDiv(dropdownCity, dropdownTimezone) {
     <p class="date-time">
       <span class="date">${moment
         .tz(dropdownTimezone)
-        .format("dddd MMMM Do, YYYY")}</span>
+        .format("dddd MMMM Do, YYYY")}</span>      
       <span class="time">${moment
         .tz(dropdownTimezone)
         .format("HH:mm:ss a")}</span>
