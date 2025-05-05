@@ -137,10 +137,17 @@ footer {
     align-items: center;
     text-align: center;
     gap: 0.5rem;
+    max-height: none; /* allow it to expand vertically */
   }
   .clock h2,
   .clock p {
     white-space: normal;
+    padding-bottom: 0.25rem;
+  }
+  .date-time {
+    position: static;
+    text-align: center;
+    margin-top: 0.25rem;
   }
 }
 
