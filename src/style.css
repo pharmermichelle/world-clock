@@ -151,14 +151,6 @@ footer {
   }
 }
 
-h1,
-.clock-container,
-.clock-container-top,
-.city-select {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .clock-container,
 .clock-container-top {
   padding: 1rem;
@@ -172,7 +164,10 @@ span.ux {
 }
 
 .city-select {
+  display: block;
   width: 100%;
+  max-width: 600px; /* or however wide you'd like it at most */
+  margin: 0 auto 20px auto; /* center it horizontally */
   font-size: 1rem;
   padding: 0.5rem;
 }
